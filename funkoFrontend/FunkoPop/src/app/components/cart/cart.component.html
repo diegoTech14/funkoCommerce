@@ -1,0 +1,130 @@
+<app-nav-bar></app-nav-bar>
+
+<div *ngIf="!localStore; else elseBlock">
+    <div id="main" class="text-center">
+        <div id="top-header">
+            <h1>THE CART IS EMPTY</h1>
+            <p>You need to add funkos to cart</p>
+            <a [routerLink]="['/feed']">
+                <button class="btn btn-dark">
+                    CONTINUE SHOPPING
+                </button>
+            </a>
+
+        </div>
+        <div>
+            <img src=" ../../../assets/Images/empty.png" alt=" "></div>
+    </div>
+</div>
+<ng-template #elseBlock>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-7">
+                <h1>MY CART</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ITEM</th>
+                            <th scope="col"></th>
+                            <th scope="col">QTY</th>
+                            <th scope="col">TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let funko of funkos">
+                            <th>
+                                <div class="d-flex align-items-center p-3">
+                                    <div>
+                                        <img id="imageCart" src="{{ funko.urlFirstImage }}" alt=""/>
+                                    </div>
+                                    <div>
+                                        <h4>{{ funko.name }}</h4>
+                                    </div>
+                                </div>
+                            </th>
+                            <th id="icon">
+                                <button class="btn btn-danger" (click)="onDeleteFunko(funko.id);">
+                                    <fa-icon [icon]="['fas','trash']"></fa-icon>
+                                </button>
+
+                            </th>
+                            <th>
+
+                                <select name="qty" id="quantitySelect" >
+
+                                    <!-- Compara si la variable === a 1 entonces selecciona ese -->
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </th>
+                            <th>
+                                <div id="price">
+                                    <p>{{ funko.price | currency }}</p>
+                                </div>
+                            </th>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-5">
+                <div class="w-75">
+                    <div class="py-4 d-flex justify-content-end"></div>
+                    <div class="rounded d-flex flex-column p-2" style="background-color: #f8f9fa">
+                        <div class="p-2 me-3">
+                            <h4>Order Recap</h4>
+                        </div>
+                        <div class="p-2 d-flex">
+                            <div class="col-8">Taxes</div>
+                            <div class="ms-auto">{{ taxe }}%</div>
+                        </div>
+                        <div class="p-2 d-flex">
+                            <div class="col-8">Disacount (
+                                {{ disacount }}
+                                )%</div>
+                            <div class="ms-auto">-
+                                {{ disacountDollar | currency }}</div>
+                        </div>
+
+
+                        <div class="border-top px-2 mx-2"></div>
+                        <div class="p-2 d-flex pt-3">
+                            <div class="col-8">Shipping Cost</div>
+                            <div class="ms-auto">
+                                <b>{{ shippingCost | currency }}</b>
+                            </div>
+                        </div>
+                        <div class="p-2 d-flex">
+                            <div class="col-8">
+                                Patient Balance
+                                <span class="fa fa-question-circle text-dark"></span>
+                            </div>
+                            <div class="ms-auto">
+                                <b>$71.76</b>
+                            </div>
+                        </div>
+                        <div class="border-top px-2 mx-2"></div>
+                        <div class="p-2 d-flex pt-3">
+                            <div class="col-8">
+                                <b>Total</b>
+                            </div>
+                            <div class="ms-auto">
+                                <b class="text-success">{{subTotal | currency}}</b>
+                            </div>
+                        </div>
+                        <a [routerLink]="['/paypage']">
+                            <div class="btn btn-success w-100">Pay</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

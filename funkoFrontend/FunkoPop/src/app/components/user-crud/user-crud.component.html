@@ -1,0 +1,126 @@
+
+        <div class="d-flex" style="height:100vh;">
+            <app-sidebar></app-sidebar>
+            <div class="container mt-5">
+                <div class="card mb-4 text-white">
+                    <div class="card-body bg-dark">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4>USERS</h4>
+
+                            </div>
+                            <div class="div d-flex justify-content-end align-items-center">
+                                <form>
+                                    <div class="d-flex">
+                                    <input type="text" class="form-control h-50 me-3" placeholder="Email address"
+                                    #femailAddress (keyup)="onFiltroChange({
+                                        emailAddress : femailAddress.value,
+                                    })">
+                                    </div>
+                               
+                                    
+                                </form>
+                                <div id="buttons">
+                                    <button class="btn btn-warning btn-sm" (click)="onPrint();">
+                                        <fa-icon [icon]="['fas','print']"></fa-icon>
+                                    </button>
+                              
+                                </div>
+                            
+                            </div>
+                        </div>
+            
+            
+                    </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <table class="table table-striped table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">id</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">ID person</th>
+                                    <th scope="col">User name</th>
+                                    <th scope="col">ID rol</th>
+                                    <th scope="col">Last access</th>
+                                    <th scope="col" colspan="3" class="text-center">
+                                  
+                                </tr>
+                            </thead>
+        
+                            <tbody class="table-group-divider">
+                                <tr *ngFor="let item of admin | paginate: {
+                                    itemsPerPage: itemsPPags,
+                                    currentPage: pagActual,
+                                    totalItems: numRegs}">
+                                  
+                                  
+                                    <th scope="row">{{item.id}}</th>
+                                    <td>{{item.emailAddress}}</td>
+                                    <td>{{item.id_person}}</td>
+                                    <td>{{item.userName}}</td>
+                                    <td>{{item.idRol}}</td>
+                                    <td>{{item.lastAccess}}</td>
+                                    <td class="text-center"><button class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#ventanaUser" (click)="onEditarUser(item.id_person);">
+                                        <fa-icon [icon]="['fas','pencil']"></fa-icon>
+                                    </button></td>
+                                    <td class="text-center"><button class="btn btn-danger" 
+                                        (click)="onEliminar(item.id_person, item.userName);">
+                                          <fa-icon [icon]="['fas','trash']"></fa-icon>
+                                      </button></td>
+                                    <td class="text-center"><button class="btn btn-primary" (click)="onInfo(item.id_person)">
+                                        <fa-icon [icon]="['fas','circle-info']"></fa-icon>
+                                    </button></td>
+                                </tr>    
+                            </tbody>
+        
+        
+        
+                        </table>
+                       
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between pt-4">
+                    <div>
+                        <select class="form-select form-select-sm" (change)="onCambioTama($event);">
+                            <option *ngFor="let tama of paginas " [ngValue]="tama" [selected]="tama===itemsPPags">{{tama}}</option>
+                        </select>
+                    </div>
+                    <div>
+                        <pagination-controls (pageChange)="onCambioPag($event)" previousLabel="" nextLabel="">
+                        </pagination-controls>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="ventanaUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Edit User</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <form id="frmUser" [formGroup]="frmUser" (ngSubmit)="onSubmit();">
+        
+                        <div class="form-floating mb-4">
+                            <input type=text class="form-control" id="idRol" placeholder="2" formControlName="idRol">
+                            <label for="floatingInput">Rol</label>
+                          </div>
+                          <div class="alert alert-danger" *ngIf="F['idRol'].invalid && F['idRol'].touched">
+                            <div *ngIf="F['idRol'].errors!['required']">Este campo es Obligatorio</div>
+                            </div>
+                  
+                          
+        
+        
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+            
+                      <button type="submit" class="btn btn-primary" form="frmUser" data-bs-dismiss="modal">Guardar</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      
+                    </div>
+                  </div>
+              </div>
+              </div>
+        </div>

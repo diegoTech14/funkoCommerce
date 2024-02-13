@@ -1,0 +1,161 @@
+<!-- Navigation-->
+<app-nav-bar></app-nav-bar>
+
+<!-- Header-->
+
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-3 gx-lg-3 row-cols-3 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div id="funko-card" class="col mb-5" *ngFor="let funko of funkos | paginate : {
+                itemsPerPage: itemsPerPage,
+                currentPage: currentPage,
+                totalItems: numberOfRegs
+            }">
+                <div class="p-4 bg-white rounded border-3" id="funko">
+                    <div *ngIf="funko.exclusivity === 1">
+                        <img id="blueCrown" src="../../../assets/Images/blueCrown.png" alt="">
+                    </div>
+                    <div class="image-container">
+                        <img class="img-fluid main-image" src="{{ funko.urlFirstImage }}" alt="" width="" height="220" (click)="onDetail(funko.id)" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                        <img class="img-fluid hover-image" src="{{ funko.urlSecondImage }}" alt="" width="" height="220" (click)="onDetail(funko.id)" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+                    </div>
+                    <div class="d-flex flex-column mt-3">
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <div>
+                                <h5>
+                                    
+                                    <span>{{ funko.name }}</span><br/>
+                                    <p>{{ funko.categoryName }}
+                                        {{ funko.typeName }}</p>
+                                </h5>
+                            </div>
+
+                            <!-- PARA  -->
+                            <input id="defaultQTY" type="hidden" value="1"/>
+
+                        </div>
+                        <div id="price">
+                            <span>${{ funko.price }}.00</span>
+                        </div>
+                        <div class="d-flex flex-direction-column justify-content-center align-items-center" id="buttons-feed">
+
+                            <select name="qty" (change)="quantityFunction($event)" id="quantitySelect" class="mt-4">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                            <button class="custom-button mt-4" data-bs-toggle="modal" data-bs-target="#addedCar" (click)="onAddCart(funko.id)">
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="card-footer d-flex justify-content-center mb-5">
+    <div>
+
+    </div>
+    <div>
+        <pagination-controls (pageChange)="onChangePage($event)" class="pagination"></pagination-controls>
+    </div>
+</div>
+
+
+<app-footer></app-footer>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex flex-direction-column">
+                    <div id="image">
+                        <div class="image-container w-100 h-100">
+                            <img class="img-fluid main-image" src="" alt="" id="firstImage"/>
+                            <img class="img-fluid hover-image" src="" alt="" id="secondImage"/>
+                        </div>
+                    </div>
+                    <div id="content-funko" class="container p-5">
+                        <h1>{{funkoName}}</h1>
+
+                        <p>{{funkoDescription}}</p>
+                        <h4 class="mb-5">{{funkoPrice | currency}}</h4>
+                        <div class="info-detail mb-5">
+                            <h4>
+                                Type:
+                                <span>{{funkoTypeName}}</span>
+                            </h4>
+                            <h4>
+                                Category:
+                                <span>{{funkoCategoryName}}</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-center mb-2">Suggested</h2>
+                        <div id="panel-recommended">
+                            <img id="firstRecommendation"/>
+                            <img id="secondRecommendation"/>
+                            <img id="thirdRecommendation"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal --><div class="modal fade" id="addedCar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" id="modal-add">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Item(s) added to cart</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex flex-direction-column">
+                    <div id="imageAdd">
+                        <div>
+                            <img src="" alt="" id="firstImageCar"/>
+                        </div>
+                    </div>
+                    <div id="content-funko-car" class="container pt-5">
+                        <h2 id="funko-name-car">{{funkoName}}</h2>
+                        <h4 id="funko-price-car">Precio:
+                            {{funkoPrice | currency}}</h4>
+                        <p id="funko-qty">Cantidad:
+                            {{quantity}}</p>
+
+                        <div class="info-detail mb-5"></div>
+                        <div class="button-add-cart" id="buttonsAdd">
+                            <div>
+                                <button class="mb-3" data-bs-dismiss="modal" id="funko-add-car" (click)="onRedirectCart();">View in car</button>
+                            </div>
+                            <div>
+                                <button class="mb-3" id="funko-continue" data-bs-dismiss="modal" aria-label="Close">
+                                    Continue Shopping
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

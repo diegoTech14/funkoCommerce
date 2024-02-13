@@ -1,0 +1,115 @@
+<app-nav-bar></app-nav-bar>
+<div class="container mt-5">
+    <div>
+        <div class="d-flex justify-content-center">
+            <div class="pb-5">
+            <h4 class="mb-3">Billing address</h4>
+            <form class="needs-validation" action="https://formspree.io/f/mpzgzqvj" method="post">
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" name="First Name">
+
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="" name="Last Name">
+
+                    </div>
+
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email
+                            <span class="text-muted">(Optional)</span>
+                        </label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" name="Email">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="" name="Addres">
+                        <div class="invalid-feedback">
+                            Please enter your shipping address.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="address2" class="form-label">Address 2
+                            <span class="text-muted">(Optional)</span>
+                        </label>
+                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite" name="Second Address">
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="country" class="form-label">Country</label>
+                        <select class="form-select" id="country" required="" name="Country">
+                            <option value="">Choose...</option>
+                            <option>Costa Rica</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="state" class="form-label">State</label>
+                        <select class="form-select" id="state" required="" name="Province">
+                            <option value="">Choose...</option>
+                            <option>Cartago</option>
+                            <option>Limón</option>
+                            <option>Heredia</option>
+                            <option>Guanacaste</option>
+                            <option>Puntarenas</option>
+                            <option>San Jose</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+
+                    <div class="rounded d-flex flex-column p-2" style="background-color: #f8f9fa">
+                        <div class="p-2 me-3">
+                            <h4>Order Recap</h4>
+                        </div>
+                        <div class="p-2 d-flex">
+                            <div class="col-8">Taxes</div>
+                            <input class="form-control" name="Taxe" type="text" readonly value="{{ taxe }}%">
+                        </div>
+                        <div class="p-2 d-flex">
+                            <div class="col-8">Discount</div>
+                            <input class="form-control" name="Disacount" type="text" readonly value="{{ disacount }}%">
+                        </div>
+    
+    
+                        <div class="border-top px-2 mx-2"></div>
+                        <div class="p-2 d-flex pt-3">
+                            <div class="col-8">Shipping Cost</div>
+                            <input class="form-control" name="ShippingCost" type="text" readonly value="{{ shippingCost | currency }}">
+                        </div>
+                 
+                        <div class="border-top px-2 mx-2"></div>
+                        <div class="p-2 d-flex pt-3">
+                            <div class="col-8">
+                                <b>Total</b>
+                            </div>
+                            <div class="ms-auto">
+                                <input class="form-control" name="Total" type="text" readonly value="{{subTotal | currency}}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                <input type="hidden" name="_next" value="http://localhost:4200/">
+             
+            </form>
+        </div>
+
+    </div>
+</div>
+</div>

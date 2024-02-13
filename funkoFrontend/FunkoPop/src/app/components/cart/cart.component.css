@@ -1,0 +1,53 @@
+#imageCart {
+  width: 150px;
+  height: 150px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5pc;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-style: none;
+  background-color: #eaeaea;
+}
+
+#icon button,
+select {
+  margin-top: 70px;
+}
+#icon button {
+  margin-right: 25px;
+}
+
+#price {
+  margin-top: 80px;
+}
+
+#main {
+  margin-top: 120px;
+  background-color: #eaeaea;
+}
+
+#top-header h1 {
+  font-size: 100px;
+}
+#top-header p {
+  font-size: 30px;
+}
+
+#top-header button {
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 50px 5px 50px;
+  border-style: 1px black;
+  border-style: solid;
+  width: 500px;
+  transition: all 0.5s ease;
+}
+
+#top-header {
+  padding: 70px;
+}

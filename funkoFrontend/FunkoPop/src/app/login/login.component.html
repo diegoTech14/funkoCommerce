@@ -1,0 +1,146 @@
+
+<!-- Header-->
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-md-7 intro-section">
+        <div class="brand-wrapper">
+          <h1><a href="">
+            <img id="funkoLogo" src="../../assets/Images/crown.png" alt="">
+          </a></h1>
+        </div>
+        <div class="intro-content-wrapper" id="info">
+          <h1 class="intro-title">Welcome to website !</h1>
+          <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna</p>
+          <a href="#!" class="btn btn-read-more">Read more</a>
+        </div>
+
+      </div>
+      <div class="col-sm-6 col-md-5 form-section text-center">
+        <div class="login-wrapper w-50">
+          <div class="mb-5">
+            <img id="funkologinlogo" src="../../assets/Images/funko.png" alt="">
+          </div>
+          <h2 class="login-title">Sign in</h2>
+          <form  [formGroup]="frmLogin" id="frmLogin" (submit)="onSubmit();">
+
+            <div class="form-floating mb-3">
+              <input type="email" id="emailAddress" class="form-control"  placeholder="name@example.com" formControlName="emailAddress">
+              <label for="email">Email address</label>
+            </div>
+
+            
+            <div class="form-floating mb-3">
+              <input type="password" id="password" class="form-control" placeholder="Password" formControlName="password">
+              <label for="passw">Password</label>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-5">
+              <button type="submit" name="login" id="login" class="btn login-btn w-100 mt-3" form="frmLogin">Login</button>
+            </div>
+          </form>           
+          <p class="login-wrapper-footer-text">Need an account? <a [routerLink]="['/register']" class="text-reset">Signup here</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--
+<section class="vh-100 bg-dark">
+  <div class="container w-25">
+    <div class="text-center">
+        <div>
+          <img  class="m-5" id="funkoLogo" src="../../assets/Images/funkologo.png" alt="">
+        </div>  
+
+              <div class="">
+                <form [formGroup]="frmLogin" id="frmLogin" (submit)="onSubmit();">
+                  
+                 
+                  <div class="form-floating mb-3">
+                      <input type="email" id="emailAddress" class="form-control"  placeholder="name@example.com" formControlName="emailAddress">
+                      <label for="email">Email address</label>
+                    </div>
+              
+
+                    <div class="form-floating mb-3">
+                      <input type="password" id="password" class="form-control" placeholder="Password" formControlName="password">
+                      <label for="passw">Password</label>
+                    </div>
+                  
+                  <div class="pt-1 mb-4">
+                    <button type="submit" id="loginbutton" class="bg-primary" form="frmLogin">Log in</button>
+                  </div>
+                  <div>
+                    <div>
+                      <p>Don't Have a FUNKO Account?</p>
+                    </div>
+                    <div>
+                      <a [routerLink]="['/register']">Create Account</a>
+                    </div>
+                  </div>
+            </form>
+              </div>
+            </div>
+          </div>
+
+
+</section>-->
+
+
+<!--
+
+<section class="vh-100 bg-dark">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="../../assets/Images/op2.jpg"
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-3 text-black">
+                <form [formGroup]="frmLogin" id="frmLogin" (submit)="onSubmit();">
+                  
+
+                  <div class="d-flex align-items-center mb-3 pb-1">
+                    <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+           
+                    <span class="h1 fw-bold mb-0">Sign into your account</span>
+                  </div>
+
+                 
+                  <div class="form-floating mb-3">
+                      <input type="email" id="emailAddress" class="form-control"  placeholder="name@example.com" formControlName="emailAddress">
+                      <label for="email">Email address</label>
+                    </div>
+              
+
+                    <div class="form-floating mb-3">
+                      <input type="password" id="password" class="form-control" placeholder="Password" formControlName="password">
+                      <label for="passw">Password</label>
+                    </div><br>
+                  
+                  <div class="pt-1 mb-4">
+  
+                    
+                    <button type="submit" class="btn btn-dark btn-lg btn-block" form="frmLogin">Login</button>
+                  </div>
+            </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+-->

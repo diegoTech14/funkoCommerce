@@ -1,0 +1,56 @@
+<app-nav-bar></app-nav-bar>
+<!-- Header-->
+<section class="vh-100">
+    <div class="container py-5 d-flex align-items-center justify-content-center">
+        <div class="card w-50" style="border-style: none;">
+          <div class="card-body p-4 p-lg-3 text-black text-center">
+            <div class="mb-5">
+              <img id="funkologinlogo" src="../../assets/Images/funko.png" alt="">
+            </div>
+            <form [formGroup]="frmChangePassw" id="frmChangePassw" (submit)="onSubmit();">
+    
+              <div class="form-floating mb-3">
+                <div class="d-flex align-items-center justify-content-center mb-3 pb-1">
+                  <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                  <span class="h1 fw-bold mb-0">Change Password</span>
+                </div>
+              </div>
+    
+              <div class="form-floating mb-3">
+                <input type="text" id="password" class="form-control" placeholder="Contraseña Actual" formControlName="password">
+                <label for="password">Current Password</label>
+                <div class="alert alert-danger" *ngIf="F['password'].invalid && F['password'].touched">
+                  <div *ngIf="F['password'].errors!['required']">Este campo es Obligatorio</div>
+                </div>
+              </div>
+    
+              <div class="form-floating mb-3">
+                <input type="password" id="passwordNew" class="form-control" placeholder="Contraseña Nueva" formControlName="passwordNew">
+                <label for="passwordNew">New Password</label>
+                <div class="alert alert-danger" *ngIf="F['passwordNew'].invalid && F['passwordNew'].touched">
+                  <div *ngIf="F['passwordNew'].errors!['required']">This field is required</div>
+                  <div ngIf="F['passwordNew'].errors!['passwordStrength']">
+                    Must contain uppercase, lowercase, nums and characters ($#%@&)</div>
+                  <div *ngIf="F['passwordNew'].errors!['minlength']">
+                    Must be at least 8 digits</div>
+                </div>
+              </div>
+    
+              <div class="form-floating mb-3">
+                <input type="password" id="passwR" class="form-control" placeholder="Confirmar Contraseña" formControlName="passwR">
+                <label for="passwR">Confirmar Contraseña</label>
+                <div class="alert alert-danger" *ngIf="F['passwR'].invalid && F['passwR'].touched">
+                  <div *ngIf="F['passwR'].errors!['required']">This field is required</div>
+                  <div *ngIf="F['passwR'].errors!['notEquals']">Passwords do not match</div>
+                </div>
+              </div><br>
+    
+              <div class="pt-1 mb-4">
+                <button type="submit" class="btn btn-dark w-100" form="frmChangePassw" [disabled]="frmChangePassw.invalid">Change Password</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+  </section>

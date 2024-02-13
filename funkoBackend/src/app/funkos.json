@@ -1,0 +1,291 @@
+[
+    {
+        "_name": "POP! BULMA IN BUNNY OUTFIT",
+        "_productTypeID": "1",
+        "_categoryID": "1",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/bulma1.png",
+        "_urlSecondImage": "../../assets/Images/bulma2.png",
+        "_stock": "12",
+        "_price": "15.00",
+        "_description": "Genius scientist, Bulma, has donned a bunny costume, resulting in hilarity and shenanigans. Complete your Dragon Ball Z collection with this exclusive Pop! Bulma in bunny outfit."
+    },
+    {
+        "_name": "POP! SUPER SAIYAN ROSE GOKU BLACK",
+        "_productTypeID": "1",
+        "_categoryID": "1",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/gokuBlack1.png",
+        "_urlSecondImage": "../../assets/Images/gokuBlack2.png",
+        "_stock": "12",
+        "_price": "15.00",
+        "_description": "As an infant, Goku was sent to destroy Earth but ended up becoming one of the planet's greatest heroes after a head injury rid the young Saiyan of his senselessly destructive nature."
+    },
+    {
+        "_name": "POP! MIGHT GUY (EIGHT INNER GATES)",
+        "_productTypeID": "1",
+        "_categoryID": "1",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/guy1.png",
+        "_urlSecondImage": "../../assets/Images/guy2.png",
+        "_stock": "12",
+        "_price": "15.00",
+        "_description": "Open the gates! Pop! Might Guy (Eight Inner Gates) is ready to unlock his full potential in your collection. Draw on the power of Pop! Might Guy (Eight Inner Gates) and add him to your Anime team. Vinyl figure is approximately 4-inches tall."
+    },
+    {
+        "_name": "POP! NARUTO AS NINE TAILS",
+        "_productTypeID": "1",
+        "_categoryID": "1",
+        "_exclusivity": "1",
+        "_urlFirstImage": "../../assets/Images/naruto1.png",
+        "_urlSecondImage": "../../assets/Images/naruto2.png",
+        "_stock": "12",
+        "_price": "15.00",
+        "_description": "Naruto is charging straight into your Naruto Shippuden set. Own your own Pop! Vinyl of Naruto in his iconic running stance. Collectible stands 3.75-inches tall."
+    },
+    {
+        "_name": "POP! MYSTERIO",
+        "_productTypeID": "4",
+        "_categoryID": "2",
+        "_exclusivity": "1",
+        "_urlFirstImage": "../../assets/Images/mysterio1.png",
+        "_urlSecondImage": "../../assets/Images/mysterio2.png",
+        "_stock": "5",
+        "_price": "30.00",
+        "_description": "Bring some mystery into your Spider-Man: Beyond Amazing collection with Pop! Mysterio. This exclusive collectible features a metallic dome and glow-in-the-dark smoke. Help Spider-Man track down this villain by adding him to your Marvel set. Vinyl bobblehead is approximately 4.3-inches tall."
+    },
+    {
+        "_name": "POP! DELUXE SINISTER SIX SPIDER-MAN",
+        "_productTypeID": "4",
+        "_categoryID": "2",
+        "_exclusivity": "1",
+        "_urlFirstImage": "../../assets/Images/spiderman1.png",
+        "_urlSecondImage": "../../assets/Images/spiderman2.png",
+        "_stock": "3",
+        "_price": "35.00",
+        "_description": "The Marvel Sinister Six series sets a whole new scene in your collection and it is exclusively available here. The Funko Pop! Deluxe Sinister Six series is comprised of 7 brand new, unique figures, which have bases that nest together to form a larger set display."
+    },
+    {
+        "_name": "POP! BATTLE READY BATMAN",
+        "_productTypeID": "4",
+        "_categoryID": "5",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/batman1.png",
+        "_urlSecondImage": "../../assets/Images/batman2.png",
+        "_stock": "8",
+        "_price": "15.00",
+        "_description": "Batman™ stands ready to face The Riddler™ as he fights crime in Gotham City™. Celebrate one of DC’s most recognizable super heroes by adding the battle-ready Pop! Batman to your DC The Batman movie collection."
+    },
+    {
+        "_name": "POP! DIE-CAST BATMAN 1989",
+        "_productTypeID": "3",
+        "_categoryID": "5",
+        "_exclusivity": "1",
+        "_urlFirstImage": "../../assets/Images/batmanD1.png",
+        "_urlSecondImage": "../../assets/Images/batmanD2.png",
+        "_stock": "3",
+        "_price": "50.00",
+        "_description": "Introducing the new Pop! Die-cast figure, designed to be the front and center, top-shelf collectible. These figures come in acrylic cases featuring etched details and fasten to the base of the case."
+    },
+
+    {
+        "_name": "POP! THOR WITH PIN",
+        "_productTypeID": "3",
+        "_categoryID": "2",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/ThorPin1.png",
+        "_urlSecondImage": "../../assets/Images/ThorPin2.png",
+        "_stock": "10",
+        "_price": "20.00",
+        "_description": "Strike up an alliance with Pop! Thor to take on evil forces that might threaten your Marvel collection. When the world’s most evil villains attack, call on Earth’s Mightiest Heroes™ to save the day."
+    },
+    {
+        "_name": "POP! LEATHERFACE",
+        "_productTypeID": "4",
+        "_categoryID": "4",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/leatherface1.png",
+        "_urlSecondImage": "../../assets/Images/leatherface2.png",
+        "_stock": "10",
+        "_price": "15.00",
+        "_description": "Leatherface's appetite has grown and he's decided to infiltrate your collection of horrors and The Texas Chainsaw Massacre as a Funko Pop! figure. Vinyl figure is approximately 4.5-inches tall."
+    },
+    {
+        "_name": "POP! ELVIRA (BLACK LIGHT)",
+        "_productTypeID": "4",
+        "_categoryID": "4",
+        "_exclusivity": "1",
+        "_urlFirstImage": "../../assets/Images/elvira1.png",
+        "_urlSecondImage": "../../assets/Images/elvira2.png",
+        "_stock": "",
+        "_price": "15.00",
+        "_description": "Spend a bewitching evening with Exclusive Pop! Elvira, in the dark! Under a black light, Pop! Elvira glows in haunting colors, and she offers you her heart. Grow your Pop! Icons collection! Vinyl figure is approximately 4-inches tall."
+    },
+    {
+        "_name": "POP! CHUCKY",
+        "_productTypeID": "4",
+        "_categoryID": "4",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/chucky1.png",
+        "_urlSecondImage": "../../assets/Images/chucky2.png",
+        "_stock": "8",
+        "_price": "15.00",
+        "_description": "Schedule a playdate with Bride of Chucky Pop! Chucky. Capture him to haunt your Pop! Movies collection. Vinyl figure is approximately 4-inches tall."
+    },
+    {
+        "_name": "POP! MOMENT HAKUNA MATATA",
+        "_productTypeID": "6",
+        "_categoryID": "3",
+        "_exclusivity": "1",
+        "_urlFirstImage": "../../assets/Images/MomentHakunaMatata1.png",
+        "_urlSecondImage": "../../assets/Images/MomentHakunaMatata2.png",
+        "_stock": "",
+        "_price": "30.00",
+        "_description": "Let your worries melt away with Pop! Simba, Pop! Pumba, and Pop! Timon. Celebrate Disney’s 100th Anniversary by completing your The Lion King collection with this exclusive Pop! Hakuna Matata Moment."
+    },
+    {
+        "_name": "POP! DOBBY WITH DIARY",
+        "_productTypeID": "3",
+        "_categoryID": "6",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/dobby1.png",
+        "_urlSecondImage": "../../assets/Images/dobby2.png",
+        "_stock": "8",
+        "_price": "15.00",
+        "_description": "He's finally free! Welcome home one of the most well-known and lovable house-elves of the Wizarding World with this Pop! Dobby holding the diary with its hidden sock! Wave a wand and celebrate the 20th anniversary of the Harry Potter and The Chamber of Secrets movie. Cast a spell and create magical adventures by expanding your Wizarding World set. Collect them all. Vinyl figure is approximately 3.53-inches tall."
+    },
+    {
+        "_name": "POP! PAPA EMIRITUS IV",
+        "_productTypeID": "3",
+        "_categoryID": "7",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/emiritus1.png",
+        "_urlSecondImage": "../../assets/Images/emiritus2.png",
+        "_stock": "7",
+        "_price": "15.00",
+        "_description": "Legendary rock band, Ghost, is ready to take the stage in your music collection! Pray for musical salvation with Pop! Papa Emeritus IV. Who will this spectral performer collaborate with in your collection? Vinyl figure is approximately 3.95-inches tall."
+    },
+    {
+        "_name": "POP! SUPER SAIYAN ROSE GOKU BLACK",
+        "_productTypeID": "1",
+        "_categoryID": "1",
+        "_exclusivity": "",
+        "_urlFirstImage": "../../assets/Images/gokuBlack1.png",
+        "_urlSecondImage": "../../assets/Images/gokuBlack2.png",
+        "_stock": "10",
+        "_price": "15.00",
+        "_description": "As an infant, Goku was sent to destroy Earth but ended up becoming one of the planet's greatest heroes after a head injury rid the young Saiyan of his senselessly destructive nature. Your Dragon Ball Super collection wouldn't be the same without its warrior protagonist, Pop! Super Saiyan Rosé Goku Black with Translucent Scythe, to protect it from attackers. Vinyl figure is approximately 5.15-inches tall."
+    },
+    {
+        "_name": "POP! DELUXE HARRY POTTER PUSHING TROLLEY",
+        "_productTypeID": "3",
+        "_categoryID": "6",
+        "_exclusivity": "1",
+        "_urlFirstImage": "../../assets/Images/harry1.png",
+        "_urlSecondImage": "../../assets/Images/harry2.png",
+        "_stock": "7",
+        "_price": "30.00",
+        "_description": "Harry Potter has his luggage on the trolley but he's not quite sure where to go from here. Help him find his way again by adding the Pop! Deluxe Harry Potter Pushing Trolley into your collection. Vinyl figure is approximately 4-inches tall. "
+    },
+    {
+        "_name": "POP! HERMIONE GRANGER",
+        "_productTypeID": "3",
+        "_categoryID": "6",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/hermione1.png",
+        "_urlSecondImage": "../../assets/Images/hermione2.png",
+        "_stock": "8",
+        "_price": "15.00",
+        "_description": "Collect one of the brightest of her age, Pop! Hermione Granger, for your Harry Potter collection. As Ron once said, he and Harry, “wouldn’t last two days without her.” Collectible stands approximately 3.75-inches tall."
+    },
+    {
+        "_name": "POP! RON WEASLEY",
+        "_productTypeID": "3",
+        "_categoryID": "6",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/ron1.png",
+        "_urlSecondImage": "../../assets/Images/ron2.png",
+        "_stock": "8",
+        "_price": "15.00",
+        "_description": "Collect one of the brightest of her age, Pop! Hermione Granger, for your Harry Potter collection. As Ron once said, he and Harry, “wouldn’t last two days without her.” Collectible stands approximately 3.75-inches tall."
+    },
+    {
+        "_name": "POP! SEVERUS SNAPE",
+        "_productTypeID": "3",
+        "_categoryID": "6",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/snape1.png",
+        "_urlSecondImage": "../../assets/Images/snape2.png",
+        "_stock": "8",
+        "_price": "15.00",
+        "_description": "Professor Snape has been teaching Potions at Hogwarts School of Witchcraft and Wizardry for years. Everyone knows that he really wants to teach Defense Against the Dark Arts though. Complete your Harry Potter Wizarding World collection with Pop! Severus Snape. Vinyl figure is approximately 4.5-inches tall."
+    },
+    {
+        "_name": "POP! SONIC WITH RING",
+        "_productTypeID": "3",
+        "_categoryID": "3",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/sonic1.png",
+        "_urlSecondImage": "../../assets/Images/sonic2.png",
+        "_stock": "8",
+        "_price": "15.00",
+        "_description": "Pop! Sonic is one step, or rather one ring, closer to defeating Doctor Eggman in your Sonic the Hedgehog collection. Collectible stands approximately 3.75-inches tall."
+    },
+    {
+        "_name": "POP! OZZY OSBOURNE IN BLACK SUIT",
+        "_productTypeID": "3",
+        "_categoryID": "7",
+        "_exclusivity": "1",
+        "_urlFirstImage": "../../assets/Images/ozzy1.png",
+        "_urlSecondImage": "../../assets/Images/ozzy2.png",
+        "_stock": "5",
+        "_price": "15.00",
+        "_description": "Set the stage for the Prince of Darkness in your music lineup with English singer and songwriter, Pop! Ozzy Osbourne! Who will this Funko exclusive Pop! performer collaborate with next in your Pop! Rocks collection? Or will you crush the air guitar solo while performing together? Vinyl figure is approximately 4.4-inches tall."
+    },
+    {
+        "_name": "POP! MASTER ROSHI WITH STAFF",
+        "_productTypeID": "3",
+        "_categoryID": "1",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/rochi1.png",
+        "_urlSecondImage": "../../assets/Images/rochi2.png",
+        "_stock": "9",
+        "_price": "15.00",
+        "_description": "Every Dragon Ball Z collection needs to have Goku’s old instructor, Master Roshi. Collect this Pop! of Master Roshi with his staff to help your Dragon Ball Z collection keep up with their training. Collectible stands 3.75-inches tall."
+    },
+    {
+        "_name": "POP! SNOOP DOGG",
+        "_productTypeID": "3",
+        "_categoryID": "7",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/snoop1.png",
+        "_urlSecondImage": "../../assets/Images/snoop2.png",
+        "_stock": "8",
+        "_price": "15.00",
+        "_description": "This legendary rapper is throwing it back to the early days of his career. Pop! Snoop Dogg wears a blue plaid shirt and khaki pants while rocking a natural hairstyle to keep things real in the world of rising rap music. Who will this artist collaborate with in your music collection? Vinyl figure is approximately 4.2-inches tall."
+    },
+    {
+        "_name": "POP! SPIDER-PUNK",
+        "_productTypeID": "3",
+        "_categoryID": "2",
+        "_exclusivity": "1",
+        "_urlFirstImage": "../../assets/Images/spiderpunk1.png",
+        "_urlSecondImage": "../../assets/Images/spiderpunk2.png",
+        "_stock": "4",
+        "_price": "15.00",
+        "_description": "Swing into action with Pop! Spider-Punk! The threads of the multiverse web are becoming more and more complicated, and now this Funko exclusive Pop! Spider-Punk's adventures have led him to your Spider-Man: Across the Spider-Verse collection. Vinyl bobblehead is approximately 5-inches tall."
+    },
+
+    {
+        "_name": "POP! HARRY POTTER",
+        "_productTypeID": "3",
+        "_categoryID": "6",
+        "_exclusivity": "0",
+        "_urlFirstImage": "../../assets/Images/harryB1.png",
+        "_urlSecondImage": "../../assets/Images/harryB2.png",
+        "_stock": "4",
+        "_price": "15.00",
+        "_description": "Pop! Harry Potter is dressed in his school robes, ready to discover more about his past and himself, in his first big endeavor away form the Dursley family. Collect Pop! Harry for your Harry Potter collection. Collectible stands approximately 3.75-inches tall."
+    }
+    
+]

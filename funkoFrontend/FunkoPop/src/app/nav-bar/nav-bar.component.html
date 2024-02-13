@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" [routerLink]="['/']">
+            <img class="m-3" id="funko-logo" src="../../assets/Images/funkologo.png" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link m-3" href="#!">Exclusive</a></li>
+                <li class="nav-item"><a class="nav-link m-3" [routerLink]="['/feed']">Shop</a></li>
+            </ul>
+
+            <form class="me-4">
+                <div class="input-group">
+                  <span class="input-group-text"><fa-icon [icon]="['fas','search']"></fa-icon></span>
+                  <input type="text" class="form-control">
+                </div>
+              </form>
+              
+                <a class="btn btn-dark position-relative" [routerLink]="['/cart']">
+                    <span id="quantityCart" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                      </span>
+                    <fa-icon [icon]="['fas','shopping-bag']" id="shoppingCartIcon"></fa-icon>
+                </a>
+
+                
+                <div *ngIf="usuario.nombre === ''">
+                  <a class="btn btn-dark m-3" [routerLink]="['/login']">
+                    <fa-icon [icon]="['fas','user']" id="shoppingCartIcon"></fa-icon>
+                    <span id="quantityCart" class="badge bg-dark text-white ms-1 rounded-pill"></span>
+                </a>
+                </div>
+
+
+                <div *ngIf="usuario?.rol === 1">
+                  <a class="btn btn-dark m-3" [routerLink]="['/dashboard']">
+                    <fa-icon [icon] = "['fas','dashboard']"></fa-icon> 
+                  </a>
+                </div>
+
+                <div class="btn-group dropdown" *ngIf="usuario?.rol === 1">
+    
+                  <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                      <fa-icon [icon] = "['fas','user']"></fa-icon> &nbsp;&nbsp;{{name}}
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" (click)="onSalir();">Log Out</a></li>
+                      <li><a class="dropdown-item"[routerLink]="['/changePassw']">Change Password</a></li>
+                    </ul>
+                  </button>
+                </div>
+                <div class="btn-group dropdown" *ngIf="usuario?.rol === 3">
+                  <button type="button" class="btn btn-dark dropdown-toggle ms-3" data-bs-toggle="dropdown">
+                    <fa-icon class="me-3" [icon] = "['fas','user']"></fa-icon>&nbsp;&nbsp;{{name}}
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" (click)="onSalir();">Log Out</a></li>
+                      <li><a class="dropdown-item"[routerLink]="['/changePassw']">Change Password</a></li>
+                    </div>
+                    <ul class="dropdown-menu">
+                    </ul>
+                  </button>
+                </div>  
+        </div>
+    </div>
+</nav>
+

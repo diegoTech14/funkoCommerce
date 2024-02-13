@@ -1,0 +1,83 @@
+
+.carousel-item{
+    height:500px;
+    background-image: url("../../../assets/Images/x-menillust.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carousel-item-potter{
+    height:500px;
+    background-image: url("../../../assets/Images/harryPotterIllust.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carousel-item-music{
+    height:500px;
+    background-image: url("../../../assets/Images/rockIllust.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#ninjaturtlesmain{
+    height:700px;
+    background-image: url("../../../assets/Images/wallstreet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logoturtles{
+    height: 200px;
+    width: 400px;
+}
+
+#ninjaturtles{
+    height: 400px;
+    width: 500px;
+}
+
+#sentinelImg{
+    width: 450px;
+    height: 450px;
+}
+
+#x-menInfo{
+    color:white;
+    margin-right: 400px;
+}
+
+#x-menInfo h1{
+    font-size: 80px;
+}
+
+#x-menInfo p{
+    font-size: 30px;
+}
+
+#shopbutton {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    border-style: 1px black;
+    border-style: solid;
+    width: 200px;
+    transition: all 0.5s ease;
+  }
+
+  #shopbutton:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #top{
+    height:100px;
+  }
+
+  #exclusiveFunko{
+    width: 100px;
+    height: 100px;
+  }

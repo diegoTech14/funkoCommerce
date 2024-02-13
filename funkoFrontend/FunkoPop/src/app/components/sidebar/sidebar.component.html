@@ -1,0 +1,52 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height:100%;">
+    <a [routerLink]="['/feed']" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <img class="w-75 h-75"src="../../../assets/Images/funkologo.png" alt="">
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link active" aria-current="page">
+          <fa-icon [icon]="['fas','shopping-bag']" id="iconSidebar"></fa-icon>
+          Shop
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white" [routerLink]="['/usercrud']">
+          <fa-icon [icon]="['fas','user']" id="iconSidebar"></fa-icon>
+          Users
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white" [routerLink]="['/funkocrud']">
+          <fa-icon [icon]="['fas','box']" id="iconSidebar"></fa-icon>
+          Funkos
+        </a>
+      </li>
+      <li>
+        <a  class="nav-link text-white" [routerLink]="['/categorycrud']">
+          <fa-icon [icon]="['fas','list']" id="iconSidebar"></fa-icon>
+          Categories
+        </a>
+      </li>
+
+      <li>
+        <a class="nav-link text-white" [routerLink]="['/dashboard']">
+          <fa-icon [icon]="['fas','dashboard']" id="iconSidebar"></fa-icon>
+          Dashboard
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <div class="dropdown">
+      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+       
+        <strong>{{name}}</strong>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+        <li><a class="dropdown-item" [routerLink]="['/changePassw']">Change Password</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" [routerLink]="['/login']">Sign out</a></li>
+      </ul>
+    </div>
+  </div>
