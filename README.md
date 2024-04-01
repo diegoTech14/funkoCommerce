@@ -4,6 +4,21 @@ This is an academic project whose objective is to manage the stock of a Funko e-
 This app is divided by 3 parts, frontend using Angular, Backend using an API created with Php Slim and database MySQL, the project was created with my colleague Dylan Castillo, here his profile: https://github.com/QuiqueCode
 
 ![funko2](https://github.com/diegoTech14/funkoCommerce/assets/85724318/961c47fc-4e34-4a34-b03a-28e635c46c9e)
+
+![dashboard5](https://github.com/diegoTech14/funkoCommerce/assets/85724318/2cd54472-fee9-4816-82e5-c55dc2554adc)
+
+![dashboard1](https://github.com/diegoTech14/funkoCommerce/assets/85724318/4f521def-089f-4946-af89-fdd5707662c1)
+
+![dashboard3](https://github.com/diegoTech14/funkoCommerce/assets/85724318/08cf8054-5dd8-481f-9a64-4510cf56bc66)
+
+![dashboard4](https://github.com/diegoTech14/funkoCommerce/assets/85724318/a4e00549-eba8-4f7a-a9d4-d943342bd033)
+
+![dashboard6](https://github.com/diegoTech14/funkoCommerce/assets/85724318/2375c49d-81e5-46d3-bc1e-8d27080373a9)
+
+![dashboard8](https://github.com/diegoTech14/funkoCommerce/assets/85724318/3386acc5-3361-4b4b-8fa0-5f28eca62cad)
+
+![dashboard7](https://github.com/diegoTech14/funkoCommerce/assets/85724318/8e592400-b07a-4491-8121-57683e8d0689)
+
 I am in the process of uploading more images...
 
 # Technologies used:
