@@ -1,7 +1,12 @@
 # Funko Inventory System
-This is an academic project whose objective is to manage the stock of a Funko e-commerce, we can see a list of Funkos, some recommendations and of course, the entire management part.
+This is an academic project whose objective is to manage an E-commerce of a Funko-Pops, we can see a list of Funkos, some recommendations and of course, the entire management part including 
+- CRUD operations
+- Filtering data
+- Exporting tables to PDF
+- Pagination data
+- Auth mechanism using JWT
 
-This app is divided by 3 parts, frontend using Angular, Backend using an API created with Php Slim and database MySQL, the project was created with my colleague Dylan Castillo, here his profile: https://github.com/QuiqueCode
+This app is divided by 3 parts, frontend using Angular, Backend using an API created with Php Slim and a database MySQL where I used functions and store procedures, the project was created with my colleague Dylan Castillo, here his profile: https://github.com/QuiqueCode
 
 ![funko2](https://github.com/diegoTech14/funkoCommerce/assets/85724318/961c47fc-4e34-4a34-b03a-28e635c46c9e)
 
@@ -19,7 +24,6 @@ This app is divided by 3 parts, frontend using Angular, Backend using an API cre
 
 ![dashboard7](https://github.com/diegoTech14/funkoCommerce/assets/85724318/8e592400-b07a-4491-8121-57683e8d0689)
 
-I am in the process of uploading more images...
 
 # Technologies used:
 <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
