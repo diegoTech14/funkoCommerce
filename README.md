@@ -1,5 +1,5 @@
 # Funko Inventory System
-This is an academic project whose objective is to manage an E-commerce of a Funko-Pops, we can see a list of Funkos, some recommendations and of course, the entire management part including 
+This is an academic project whose objective is to manage an E-commerce of a Funko-Pops, we can see a list of Funkos, some recommendations and of course, the entire management part included
 - CRUD operations
 - Filtering data
 - Exporting tables to PDF
