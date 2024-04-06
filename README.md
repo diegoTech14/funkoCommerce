@@ -6,7 +6,7 @@ This is an academic project whose objective is to manage an E-commerce of a Funk
 - Pagination data
 - Auth mechanism using JWT
 
-This app is divided by 3 parts, frontend using Angular, Backend using an API created with Php Slim and a database MySQL where I used functions and store procedures, the project was created with my colleague Dylan Castillo, here his profile: https://github.com/QuiqueCode
+This app is divided by 3 parts, frontend using Angular, Backend using a RestFul API created with Php Slim and a database MySQL where I used functions and store procedures, the project was created with my colleague Dylan Castillo, here his profile: https://github.com/QuiqueCode
 
 ![funko2](https://github.com/diegoTech14/funkoCommerce/assets/85724318/961c47fc-4e34-4a34-b03a-28e635c46c9e)
 
