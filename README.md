@@ -1,4 +1,4 @@
-# Funko Inventory System
+# Funko Inventory System API
 This is an academic project whose objective is to manage an E-commerce of a Funko-Pops, we can see a list of Funkos, some recommendations and of course, the entire management part.
 - CRUD operations
 - Filtering data
