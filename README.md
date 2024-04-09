@@ -10,8 +10,8 @@ This is an academic project whose objective is to manage an E-commerce of a Funk
 This app is divided by 3 parts, frontend using Angular, Backend using a RestFul API created with Php Slim and a database MySQL where I used functions and store procedures, the project was created with my colleague Dylan Castillo, here his profile: https://github.com/QuiqueCode
 
 # Technologies used into:
-<img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"> <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
-
+<img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"> <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+ 
 ![funko2](https://github.com/diegoTech14/funkoCommerce/assets/85724318/961c47fc-4e34-4a34-b03a-28e635c46c9e)
 
 ![dashboard5](https://github.com/diegoTech14/funkoCommerce/assets/85724318/2cd54472-fee9-4816-82e5-c55dc2554adc)
